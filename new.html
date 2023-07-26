@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+  
+
+    <title>WExpo</title>
+    <style>
+*{
+  margin: 0;
+  padding:0 ;
+  box-sizing: border-box;
+  font-family: 'poppins' , 'sans-serif';
+}
+
+
+.header{
+  width: 100%;
+  height: 25vh;
+  background-image: url("images/header\ background.gif");
+  background-position: center auto;
+  background-size: cover;
+
+}
+nav{
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+
+}
+.logo{
+  width: 150px;
+  margin: 20px 0;
+  cursor: pointer;
+  
+}
+nav ul{
+  background-color: #000000ee;
+  width: 100%;
+  margin-top: 29px;
+
+}
+
+nav ul li{
+  display: inline-block;
+  list-style:none;
+  margin: 15px 30px;
+  color: rgb(251, 251, 251);
+  height: 30px;
+  line-height: 30px;
+  padding: 0 5px;
+}
+nav li:hover {
+  background: rgb(255, 255, 255);
+  transition: background .3s;
+}
+.text{
+  padding: 20px 8%;
+
+}
+
+nav.sticky{
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 10px 8%;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: padding 1s;
+
+}
+
+nav sticky ul{
+  width: auto;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Istok+Web);
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+
+body, figure { 
+  margin: 0; background: transparent;
+  font-family: Istok Web, sans-serif;
+  font-weight: 100;
+}
+div#captioned-gallery { 
+  width: 100%; overflow: hidden; 
+}
+figure.slider { 
+    
+  position: relative; width: 500%;
+  font-size: 0; animation: 20s slidy infinite; 
+}
+figure.slider figure { 
+  width: 20%; height: auto;
+  display: inline-block;  position: inherit; 
+}
+figure.slider img { width: 100%; height: auto; }
+figure.slider figure figcaption { 
+  position: absolute; bottom: 0;
+  background: rgba(0,0,0,0.4);
+  color: #fff; width: 100%;
+  font-size: 2rem; padding: .2rem; 
+}
+
+.footer-basic {
+  padding:40px 0;
+  background-color:#060606;
+  color:#d8dde1;
+}
+
+.footer-basic ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
+}
+
+.footer-basic li {
+  padding:0 10px;
+}
+
+.footer-basic ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity:1;
+}
+
+.footer-basic .social {
+  text-align:center;
+  padding-bottom:25px;
+}
+
+.footer-basic .social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin:0 8px;
+  color:inherit;
+  opacity:0.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity:0.5;
+}
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:0;
+}
+h1 { text-align: center; margin: 2.5em;}
+div.main {
+  width:90%;
+  overflow:hidden;
+  background-color: linear-gradient(135deg,#05073a,#dc0606ca);
+  margin: .8em auto;
+  height: auto;
+  border: 2px solid rgb(0, 0, 0);
+  box-shadow: 0 0 20px rgb(82, 9, 9);
+  padding: .3em 0;
+  font-size: 2em;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: green;
+}
+div.slide-right p {
+  -moz-animation: 10s slide-right;
+  -webkit-animation: 10s slide-right;
+  -o-animation: 10s slide-right;
+  animation: 10s slide-right;
+  margin:0;
+}
+div.slide-left p {
+  -moz-animation: 10s slide-left;
+  -webkit-animation: 10s slide-left;
+  -o-animation: 10s slide-left;
+  animation: 10s slide-left;
+  margin:0;
+}
+@-webkit-keyframes slide-right { from { margin-left: 100%;width: 300%; }
+  to {margin-left: 0%;width: 100%;} }
+@-moz-keyframes slide-right { from { margin-left: 100%;width: 300%; }
+  to {margin-left: 0%;width: 100%;} }
+ @-o-keyframes slide-right { from { margin-left: 100%;width: 300%; }
+  to {margin-left: 0%;width: 100%;} }
+@keyframes slide-right { from { margin-left: 100%;width: 300%; }
+  to {margin-left: 0%;width: 100%;} }
+
+@-webkit-keyframes slide-left { from {margin-left: 0%;width: 100%;}
+ to {margin-left: -100%;width: 300%;} }
+@-moz-keyframes slide-left { from {margin-left: 0%;width: 100%;}
+ to {margin-left: -100%;width: 300%;} }
+@-o-keyframes slide-left { from {margin-left: 0%;width: 100%;}
+ to {margin-left: -100%;width: 300%;} }
+@keyframes slide-left { from {margin-left: 0%;width: 100%;}
+ to {margin-left: -100%;width: 300%;} }
+
+ .glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: rgb(22, 8, 76);
+    cursor: pointer;
+    position: absolute;
+    top:100%;
+    left:75%;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: rgb(163, 16, 16)
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(29, 19, 71);
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <nav id="navbar">
+          <img src="images/logo.gif" alt="logo" />
+          <ul id="menu">
+            <li><a href="index1.html">Home</a> </li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="tours.html">Packages</a></li>
+            <li><a href="form.html">Plans</a></li>
+            <li><a href="#">Gallary</a></li>
+            <li><a href="contact.html">Contact</a></li>
+  
+          </ul>
+        </nav>
+    </div>
+    <br>
+    <br>
+    <div class="main slide-right">
+        <p>  “It is not the destination where you end up but the mishaps and memories you create along the way.” 
+        </p>
+     </div>
+
+    <base href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/">
+<div id="captioned-gallery">
+	<figure class="slider">
+		<figure>
+			<img src="hobbiton-lake.jpg" alt>
+			<figcaption>Hobbiton, New Zealand</figcaption>
+		</figure>
+		<figure>
+			<img src="wanaka-drowned-tree.jpg" alt>
+			<figcaption>Wanaka, New Zealand</figcaption>
+		</figure>
+		<figure>
+			<img src="utah-peak.jpg" alt>
+			<figcaption>Utah, United States</figcaption>
+		</figure>
+		<figure>
+			<img src="bryce-canyon-utah.jpg" alt>
+			<figcaption>Bryce Canyon, Utah, United States</figcaption>
+		</figure>
+		<figure>
+			<img src="hobbiton-lake.jpg" alt>
+			<figcaption>Hobbiton, New Zealand</figcaption>
+		</figure>
+	</figure>
+    <button class="glow-on-hover" type="button">Let's Explore</button>
+</div>
+    <div class="footer-basic">
+        <footer>
+            <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Home</a></li>
+                <li class="list-inline-item"><a href="#">Services</a></li>
+                <li class="list-inline-item"><a href="#">About</a></li>
+                <li class="list-inline-item"><a href="#">Terms</a></li>
+                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+            </ul>
+            <p class="copyright"><a href="#">WExpo © 2022</a> </p>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+    
+<script>
+          var navbar = document.getElementById("navbar");
+      var menu = document.getElementById("menu");
+
+      window.onscroll = function () {
+        if (pageYOffset >= menu.offsetTop) {
+          navbar.classList.add("sticky");
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      };
+</script>
+<script>
+    var title = ['<p>Every new beginning comes from some other beginnings end.</p>','<p>“I would rather own a little and see the world than own the world and see a little of it.”</p>','<p>It s better to burn out, than to fade away.</p>','<p>“Life isn’t about finding yourself. Life is about creating yourself.”</p>','<p>“Life’s a journey not a destination”</p>'];
+var index = 0;
+
+function change_title() {
+    var x = title[index];
+    $('.main').html(x);
+    index++;
+    if (index >= title.length) { index = 0; }
+};
+
+function change_left() {
+    $('div').removeClass('slide-right').addClass('slide-left');
+}
+
+function change_right() {
+    $('div').removeClass('slide-left').addClass('slide-right');
+    change_title();
+}
+
+function to_left() {
+setInterval(change_left, 10000);
+};
+
+function to_right() {
+    setInterval(change_right, 20000);
+};
+
+to_left();
+to_right();
+</script>    
+</body>
+</html>
